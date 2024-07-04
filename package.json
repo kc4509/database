@@ -1,0 +1,17 @@
+{
+  "name": "hw1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build --base=/~kc4509/330/hw1-api-get-kc4509/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vitest": "^1.3.0"
+  }
+}

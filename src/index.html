@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 1</title>
+  </head>
+
+  <body class="preparing">
+    <section id="homePage">
+      <h1>GENSHIN DATABASE</h1>
+      <div id="gallery">
+        <div class="imgContainer">
+          <img
+            class="imgContainer"
+            src="images/GenshinMond.png"
+            alt="Genshin Mondstadt"
+          />
+          <div class="text">
+            <h2>Mondstadt</h2>
+          </div>
+          <button class="selectLocation" id="mondstadt"></button>
+        </div>
+        <div class="imgContainer" id="Liyue">
+          <img
+            class="imgContainer"
+            src="images/GenshinLiyue.png"
+            alt="Genshin Liyue"
+          />
+          <div class="text">
+            <h2>Liyue</h2>
+          </div>
+          <button class="selectLocation" id="liyue"></button>
+        </div>
+        <div class="imgContainer">
+          <img
+            class="imgContainer"
+            src="images/GenshinInazuma.png"
+            alt="Genshin Inazuma"
+          />
+          <div class="text">
+            <h2>Inazuma</h2>
+          </div>
+          <button class="selectLocation" id="inazuma"></button>
+        </div>
+        <div class="imgContainer">
+          <img
+            class="imgContainer"
+            src="images/GenshinSumeru.png"
+            alt="Genshin Sumeru"
+          />
+          <div class="text">
+            <h2>Sumeru</h2>
+          </div>
+          <button class="selectLocation" id="sumeru"></button>
+        </div>
+        <div class="imgContainer">
+          <img
+            class="imgContainer"
+            src="images/GenshinFontaine.png"
+            alt="Genshin Fontaine"
+          />
+          <div class="text">
+            <h2>Fontaine</h2>
+          </div>
+          <button class="selectLocation" id="fontaine"></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="infoPage">
+      <div id="searchBar">
+        <h2>
+          Search for a Character's name, weapon type, or vision type to learn
+          more about the characters
+        </h2>
+        <select name="filters" id="filterSelect">
+          <option value="none">--Click here to choose a filter--</option>
+          <option value="characterName">Character Name</option>
+          <option value="vision">Vision Type</option>
+          <option value="weapon">Weapon Type</option>
+        </select>
+        <input id="input" type="text" />
+        <button id="searchButton" class="button">Search</button>
+        <button id="resetButton" class="button">Reset</button>
+        <button id="backButton" class="button">Back</button>
+      </div>
+
+      <div id="infoList"></div>
+    </section>
+
+    <div id="footer">
+      <p>Last updated: Patch 4.4 (02/02/2024)</p>
+    </div>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
